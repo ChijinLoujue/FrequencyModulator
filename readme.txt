@@ -1,1 +1,1 @@
-这是一个调幅信号发生器，大三的FPGA实验
+This is a frequency modulator, made in third grade in college.

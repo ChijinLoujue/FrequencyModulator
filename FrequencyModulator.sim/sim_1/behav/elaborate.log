@@ -1,0 +1,85 @@
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L xbip_utils_v3_0_6 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L axi_utils_v2_0_2 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L c_reg_fd_v12_0_2 -L xbip_addsub_v3_0_2 -L c_addsub_v12_0_9 -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling package mult_gen_v12_0_11.mult_gen_v12_0_11_viv_comp
+Compiling package mult_gen_v12_0_11.mult_gen_v12_0_11_pkg
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package c_addsub_v12_0_9.c_addsub_v12_0_9_viv_comp
+Compiling package xbip_addsub_v3_0_2.xbip_addsub_v3_0_2_viv_comp
+Compiling package c_addsub_v12_0_9.c_addsub_v12_0_9_pkg
+Compiling package c_addsub_v12_0_9.c_addsub_v12_0_9_pkg_legacy
+Compiling package c_reg_fd_v12_0_2.c_reg_fd_v12_0_2_viv_comp
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=32,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_11.op_resize [\op_resize(bi_type=1,ao_width=19...]
+Compiling architecture xilinx of entity mult_gen_v12_0_11.luts [\luts(c_xdevicefamily="artix7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_11.mult_gen_v12_0_11_viv [\mult_gen_v12_0_11_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_11.mult_gen_v12_0_11 [\mult_gen_v12_0_11(c_xdevicefami...]
+Compiling architecture mult_gen_0_arch of entity xil_defaultlib.mult_gen_0 [mult_gen_0_default]
+Compiling architecture structural of entity c_reg_fd_v12_0_2.c_reg_fd_v12_0_2_viv [\c_reg_fd_v12_0_2_viv(c_sync_pri...]
+Compiling architecture structural of entity c_reg_fd_v12_0_2.c_reg_fd_v12_0_2_viv [\c_reg_fd_v12_0_2_viv(c_width=10...]
+Compiling architecture rtl of entity c_addsub_v12_0_9.c_addsub_v12_0_9_lut6_legacy [\c_addsub_v12_0_9_lut6_legacy(c_...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_fabric_legacy [\c_addsub_v12_0_9_fabric_legacy(...]
+Compiling architecture structural of entity c_reg_fd_v12_0_2.c_reg_fd_v12_0_2_viv [\c_reg_fd_v12_0_2_viv(c_width=11...]
+Compiling architecture rtl of entity c_addsub_v12_0_9.c_addsub_v12_0_9_lut6_legacy [\c_addsub_v12_0_9_lut6_legacy(c_...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_fabric_legacy [\c_addsub_v12_0_9_fabric_legacy(...]
+Compiling architecture rtl of entity c_addsub_v12_0_9.c_addsub_v12_0_9_lut6_legacy [\c_addsub_v12_0_9_lut6_legacy(c_...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_fabric_legacy [\c_addsub_v12_0_9_fabric_legacy(...]
+Compiling architecture rtl of entity c_addsub_v12_0_9.c_addsub_v12_0_9_lut6_legacy [\c_addsub_v12_0_9_lut6_legacy(c_...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_fabric_legacy [\c_addsub_v12_0_9_fabric_legacy(...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_legacy [\c_addsub_v12_0_9_legacy(c_famil...]
+Compiling architecture synth of entity c_addsub_v12_0_9.c_addsub_v12_0_9_viv [\c_addsub_v12_0_9_viv(c_xdevicef...]
+Compiling architecture xilinx of entity c_addsub_v12_0_9.c_addsub_v12_0_9 [\c_addsub_v12_0_9(c_xdevicefamil...]
+Compiling architecture c_addsub_0_arch of entity xil_defaultlib.c_addsub_0 [c_addsub_0_default]
+Compiling module xil_defaultlib.FrequencyModulator
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav

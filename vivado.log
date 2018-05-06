@@ -1,0 +1,2267 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu May 18 15:38:11 2017
+# Process ID: 10296
+# Current directory: D:/Study/FPGA/FrequencyModulator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11512 D:\Study\FPGA\FrequencyModulator\FrequencyModulator.xpr
+# Log file: D:/Study/FPGA/FrequencyModulator/vivado.log
+# Journal file: D:/Study/FPGA/FrequencyModulator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Study/FPGA/FrequencyModulator/FrequencyModulator.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/WorkSoftware/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:42 ; elapsed = 00:00:28 . Memory (MB): peak = 790.301 ; gain = 133.238
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 4
+[Thu May 18 15:43:06 2017] Launched impl_1...
+Run output will be captured here: D:/Study/FPGA/FrequencyModulator/FrequencyModulator.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+ERROR: [VRFC 10-46] dda_copiler_carrier_st is already declared [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:72]
+ERROR: [VRFC 10-91] s_axis_phase_tvalid is not declared [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:88]
+ERROR: [VRFC 10-1040] module DDSc_st ignored due to previous errors [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:24]
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 802.703 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 802.703 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+ERROR: [VRFC 10-91] s_axis_phase_tvalid is not declared [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:88]
+ERROR: [VRFC 10-1040] module DDSc_st ignored due to previous errors [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:24]
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 803.344 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 803.344 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 815.551 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 15:47:29 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 815.551 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '27' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:44 . Memory (MB): peak = 815.551 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 822.852 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 831.637 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+WARNING: [VRFC 10-1771] potential always loop found [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:99]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 831.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 15:56:36 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 831.637 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 831.637 ; gain = 0.000
+INFO: [Common 17-344] 'run' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+xsim: Time (s): cpu = 00:00:37 ; elapsed = 00:00:35 . Memory (MB): peak = 831.637 ; gain = 0.000
+INFO: [Common 17-344] 'xsim' was cancelled
+INFO: [Vivado 12-4707] 'simulate' step aborted
+launch_simulation: Time (s): cpu = 00:00:41 ; elapsed = 00:01:08 . Memory (MB): peak = 831.637 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+run 300 us
+run: Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 832.941 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 832.941 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 832.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:15:46 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 832.941 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:41 . Memory (MB): peak = 832.941 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:33 . Memory (MB): peak = 832.941 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 844.770 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'get_param' was cancelled
+INFO: [Vivado 12-4706] 'setup' step aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:19:22 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:23 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:38 . Memory (MB): peak = 844.770 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:33 . Memory (MB): peak = 844.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 844.770 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:22:05 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:22 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:39 . Memory (MB): peak = 844.770 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:32 . Memory (MB): peak = 844.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 844.770 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:26:20 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:39 . Memory (MB): peak = 844.770 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 844.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 844.770 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:28:58 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 844.770 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:37 . Memory (MB): peak = 844.770 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 844.770 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 849.914 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:37:11 2017...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:23 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:39 . Memory (MB): peak = 849.914 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 849.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 849.914 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:46:26 2017...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:21 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 849.914 ; gain = 0.000
+run 300 us
+run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:37 . Memory (MB): peak = 849.914 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 849.914 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+Vivado Simulator 2016.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/WorkSoftware/Xilinx/Vivado/2016.2/bin/unwrapped/win64.o/xelab.exe -wto 2fc9dda731ed4659890e9739943f9fa2 --debug typical --relax --mt 2 -L xbip_utils_v3_0_6 -L axi_utils_v2_0_2 -L xbip_pipe_v3_0_2 -L xbip_bram18k_v3_0_2 -L mult_gen_v12_0_11 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_2 -L xbip_dsp48_multadd_v3_0_2 -L dds_compiler_v6_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DDSc_st_behav xil_defaultlib.DDSc_st xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package xbip_utils_v3_0_6.xbip_utils_v3_0_6_pkg
+Compiling package xbip_utils_v3_0_6.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_12.pkg_dds_compiler_v6_0_12
+Compiling package dds_compiler_v6_0_12.dds_compiler_v6_0_12_hdl_comps
+Compiling package xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv_comp
+Compiling package axi_utils_v2_0_2.axi_utils_v2_0_2_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_2.global_util_pkg
+Compiling package axi_utils_v2_0_2.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_12.pkg_betas
+Compiling package dds_compiler_v6_0_12.pkg_alphas
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=12,CLKIN...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_rdy [\dds_compiler_v6_0_12_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.pipe_add [\pipe_add(c_width=27,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.accum [\accum(c_xdevicefamily="artix7",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.sin_cos [\sin_cos(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_2.xbip_pipe_v3_0_2_viv [\xbip_pipe_v3_0_2_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_core [\dds_compiler_v6_0_12_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12_viv [\dds_compiler_v6_0_12_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_12.dds_compiler_v6_0_12 [\dds_compiler_v6_0_12(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling module xil_defaultlib.DDSc_st
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DDSc_st_behav
+
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xsim.dir/DDSc_st_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 18 16:56:31 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 849.914 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DDSc_st_behav -key {Behavioral:sim_1:Functional:DDSc_st} -tclbatch {DDSc_st.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.2
+Time resolution is 1 ps
+source DDSc_st.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance DDSc_st.clk_wiz_400MHz.inst.plle2_adv_inst are not same.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DDSc_st_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 850.277 ; gain = 0.363
+run 300 us
+run: Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 850.277 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 850.277 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'DDSc_st' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/sin.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav'
+"xvlog -m64 --relax -prj DDSc_st_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DDSc_st
+ERROR: [VRFC 10-1280] procedural assignment to a non-register testhhh is not permitted, left-hand side should be reg/integer/time/genvar [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:99]
+ERROR: [VRFC 10-1280] procedural assignment to a non-register testhhh is not permitted, left-hand side should be reg/integer/time/genvar [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:99]
+ERROR: [VRFC 10-1040] module DDSc_st ignored due to previous errors [D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sim_1/new/DDSc_st.v:24]
+"xvhdl -m64 --relax -prj DDSc_st_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_utils_v3_0_6/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/axi_utils_v2_0_2/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_2
+INFO: [VRFC 10-307] analyzing entity glb_srl_fifo
+INFO: [VRFC 10-307] analyzing entity glb_ifx_slave
+INFO: [VRFC 10-307] analyzing entity glb_ifx_master
+INFO: [VRFC 10-307] analyzing entity axi_slave_2to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_3to1
+INFO: [VRFC 10-307] analyzing entity axi_slave_4to1
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_pipe_v3_0_2/hdl/xbip_pipe_v3_0.vhd" into library xbip_pipe_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_pipe_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_synth
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_bram18k_v3_0_2/hdl/xbip_bram18k_v3_0.vhd" into library xbip_bram18k_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_bram18k_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity op_resize
+INFO: [VRFC 10-307] analyzing entity delay_line
+INFO: [VRFC 10-307] analyzing entity cc_compare
+INFO: [VRFC 10-307] analyzing entity luts
+INFO: [VRFC 10-307] analyzing entity mult18
+INFO: [VRFC 10-307] analyzing entity dsp
+INFO: [VRFC 10-307] analyzing entity hybrid
+INFO: [VRFC 10-307] analyzing entity ccm_dist_mem
+INFO: [VRFC 10-307] analyzing entity ccm_sp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_dp_block_mem
+INFO: [VRFC 10-307] analyzing entity ccm_syncmem
+INFO: [VRFC 10-307] analyzing entity ccm_scaled_adder
+INFO: [VRFC 10-307] analyzing entity ccm_operation
+INFO: [VRFC 10-307] analyzing entity ccm
+INFO: [VRFC 10-307] analyzing entity three_input_adder
+INFO: [VRFC 10-307] analyzing entity multmxn_lut6
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/mult_gen_v12_0_11/hdl/mult_gen_v12_0.vhd" into library mult_gen_v12_0_11
+INFO: [VRFC 10-307] analyzing entity mult_gen_v12_0_11
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_wrapper_v3_0_4/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48a1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48e2_wrapper_v3_0
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_addsub_v3_0_2/hdl/xbip_dsp48_addsub_v3_0.vhd" into library xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_addsub_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_rtl
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_synth
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/xbip_dsp48_multadd_v3_0_2/hdl/xbip_dsp48_multadd_v3_0.vhd" into library xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-307] analyzing entity xbip_dsp48_multadd_v3_0_2
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0_vh_rfs.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dither_wrap
+INFO: [VRFC 10-307] analyzing entity pipe_add
+INFO: [VRFC 10-307] analyzing entity lut_ram
+INFO: [VRFC 10-307] analyzing entity lut5_ram
+INFO: [VRFC 10-307] analyzing entity sin_cos
+INFO: [VRFC 10-307] analyzing entity sin_cos_quad_rast
+INFO: [VRFC 10-307] analyzing entity dsp48_wrap
+INFO: [VRFC 10-307] analyzing entity accum
+INFO: [VRFC 10-307] analyzing entity raster_accum
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff_lut
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_eff
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_rdy
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_core
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12_viv
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.ip_user_files/ipstatic/dds_compiler_v6_0_12/hdl/dds_compiler_v6_0.vhd" into library dds_compiler_v6_0_12
+INFO: [VRFC 10-307] analyzing entity dds_compiler_v6_0_12
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/FPGA/FrequencyModulator/FrequencyModulator.srcs/sources_1/ip/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dds_compiler_0
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 850.277 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '10' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Study/FPGA/FrequencyModulator/FrequencyModulator.sim/sim_1/behav/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 850.277 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 18 18:40:30 2017...
